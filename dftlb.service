@@ -1,0 +1,12 @@
+[Unit]
+Description=DFT Load Balancer
+After=network-online.target time-sync.target
+Wants=network-online.target time-sync.target
+
+[Service]
+ExecStart=/usr/local/bin/dftlb
+WorkingDirectory=/etc/dftlb
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

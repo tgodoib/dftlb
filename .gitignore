@@ -1,0 +1,31 @@
+# ── Experimentos, dados e automação local ────────────────────────────────────
+tests/
+results/
+Justfile
+src/monitor/
+
+# Scripts shell de referência (não usados pelo binário; VIP desatualizado)
+src/local/shell_cmds/
+
+# ── Build ────────────────────────────────────────────────────────────────────
+_out/
+/dftlb
+*.exe
+*.test
+*.out
+
+# ── Logs e anotações locais ──────────────────────────────────────────────────
+*.log
+changes_luis.txt
+
+# ── Editores, ferramentas e SO ───────────────────────────────────────────────
+.claude/
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
+
+# ── Ambientes e segredos ─────────────────────────────────────────────────────
+.env
+.env.*

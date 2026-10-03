@@ -1,0 +1,16 @@
+listen_port: 9000
+
+lb:
+  virtual_ip: 10.0.0.100
+  forward_port: 80
+  interface: end0
+
+nodes:
+  - id: 1
+    ip: 10.0.0.101
+  - id: 2
+    ip: 10.0.0.102
+  - id: 3
+    ip: 10.0.0.103
+
+self: 3
